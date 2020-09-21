@@ -1,0 +1,9 @@
+<h2>Name: <%= @superhero.name %></h2>
+<h2>Superpowers:</h2>
+<ul>
+<% @superhero.superpowers.each do |superpower| %>
+    <li>
+        <%= superpower.name %>
+    </li>
+<% end %>
+</ul>
