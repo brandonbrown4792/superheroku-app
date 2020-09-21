@@ -1,15 +1,19 @@
-<h1>Superheroes</h1>
-<% @superheroes.each do |superhero| %>
-    <ul>
-        <li>
-            <%= link_to superhero.name, superhero_path(superhero) %>
-            <% superhero.superpowers.each do |superpower| %>
-                <ul>
-                    <li>
-                        <%= superpower.name %>
-                    </li>   
-                </ul>
-            <% end %>
-        </li>
-    </ul>
-<% end %>
+<div class="container">
+    <h1>Superheroes</h1>
+    <br>
+    <% @superheroes.each do |superhero| %>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h4><%= link_to superhero.name, superhero_path(superhero) %></h4>
+                <% superhero.superpowers.each do |superpower| %>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <%= superpower.name %>
+                        </li>   
+                    </ul>
+                <% end %>
+            </li>
+            <br><br>
+        </ul>
+    <% end %>
+</div>
