@@ -1,24 +1,5 @@
-# README
+# Heroku Deployment Example Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of this application is to be used to practice Heroku deployment.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You may find an associated blog post [here]() with walkthrough instructions.
