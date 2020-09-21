@@ -1,9 +1,16 @@
-<h2>Name: <%= @superhero.name %></h2>
-<h2>Superpowers:</h2>
-<ul>
-<% @superhero.superpowers.each do |superpower| %>
-    <li>
-        <%= superpower.name %>
-    </li>
-<% end %>
-</ul>
+<div class="container">
+    <h1><%= @superhero.name %></h1>
+    <br>
+    <ul class='list-group'>
+        <li class='list-group-item'><h5>Superpowers</h5></li>
+        <li class='list-group-item'>
+            <ul class="list-group">
+            <% @superhero.superpowers.each do |superpower| %>
+                <li class="list-group-item list-group-item-light">
+                    <%= superpower.name %>
+                </li>
+            <% end %>
+            </ul>
+        </li>
+        </ul>
+</div>
